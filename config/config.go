@@ -10,7 +10,7 @@ type Config struct {
 func Load() *Config {
     redisAddr := os.Getenv("REDIS_ADDR")
     if redisAddr == "" {
-        redisAddr = "localhost:6379" // default
+        redisAddr = "localhost:6389" // default
     }
 
     port := os.Getenv("PORT")
